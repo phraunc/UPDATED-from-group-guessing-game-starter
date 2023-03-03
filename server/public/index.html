@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guess A Number!</title>
+  <script src="vendors/jquery.min.js"></script>
+  <script src="scripts/client.js"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div>
+    <h1>Team Spider Hole Guessing Game!</h1>
+  </div>
+
+  <div id="inputArea">
+    <input id="playerOneNameInput" class="inputFormField" type="text" placeholder="player one name">
+    <input id="playerOneGuessInput" class="inputFormField" type="number" placeholder="guess a number">
+    <p></p>
+    <input id="playerTwoNameInput" class="inputFormField" type="text" placeholder="player two name">
+    <input id="playerTwoGuessInput" class="inputFormField" type="number" placeholder="guess a number">
+    <!-- button to submit -->
+    <p></p>
+    <button id="submitGuess">Submit Guesses</button>
+  </div>
+
+  <div id="roundsPlayedArea">
+    <p>Rounds Played: 0</p>
+    <!-- # of guesses will show up here -->
+  </div>
+  
+  <div>
+    <ul id="guessRenderArea">
+    <!-- guesses will be rendered here -->
+    </ul>
+  </div>
+
+  <div>
+    <ul id="resuldtArea">    
+    <!-- results of guessing will show here -->
+    </ul>
+  </div>
+
+  <div id="winnerCircle">
+    <!-- winner & restart button will show up here when applicable -->
+  </div>
+  
+</body>
+</html>
